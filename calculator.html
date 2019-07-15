@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--By: Christopher Lee Copyright 2019 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="lab9.css">
+    <script src="lab9.js" charset="utf-8"></script>
+    <script src="jquery-3.4.1.js" charset="utf-8"></script>
+  </head>
+  <body>
+  <div class="calculator">
+    <div class="display">
+        <p class="output" id ="display"></p>
+    </div>
+    <div class="gridWrapper">
+      <div class="number7">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "7">7</button>
+      </div>
+      <div class="number8">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "8">8</button>
+      </div>
+      <div class="number9">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "9">9</button>
+      </div>
+      <div class="numberdiv">
+      <button type="button" name="button" onclick="getOperator(this.value)" value="4">/</button>
+      </div>
+      <div class="numberAC">
+      <button type="button" name="button" onclick="clearDisplay()">AC</button>
+      </div>
+      <div class="number4">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "4">4</button>
+      </div>
+      <div class="number5">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "5">5</button>
+      </div>
+      <div class="number6">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "6">6</button>
+      </div>
+      <div class="numbermul">
+      <button type="button" name="button" onclick="getOperator(this.value)" value="3">*</button>
+      </div>
+      <div class="number1">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "1">1</button>
+      </div>
+      <div class="number2">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "2">2</button>
+      </div>
+      <div class="number3">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "3">3</button>
+      </div>
+      <div class="numbersub">
+      <button type="button" name="button" onclick="getOperator(this.value)" value="2">-</button>
+      </div>
+      <div class="numberequal">
+      <button type="button" name="button" onclick="equals()">=</button>
+      </div>
+      <div class="number0">
+        <button type="button" name="button" onclick="getDisplay(this.id)" id = "0">0</button>
+      </div>
+      <div class="numberdot">
+        <button type="button" name="button" onclick="getDecimal()">.</button>
+      </div>
+      <div class="numberadd">
+        <button type="button" name="button" onclick="getOperator(this.value)" value="1">+</button>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
